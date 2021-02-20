@@ -22,7 +22,7 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 #### Ausgabe in Jupyter Notebook
 
-Ein Standardaufruf der Funktion **mr()** mit (vgl. Beispieldatensatz *mehrfachantworten*)
+Ein Standardaufruf (vgl. Beispieldatensatz *mehrfachantworten.csv*) der Funktion **mr()** mit
 ```python
 mr(daten, "nike", "head", "boss", "lacoste")
 ```
@@ -32,7 +32,11 @@ ergibt in Jupyter Notebooks folgenden Output:
 
 #### Ausgabe in Spyder IDE
 
+Die Ausgabe der Grafik unterscheidet sich zwischen Jupyter Notebooks und der Ausgabe in Spyder nicht; jedoch sieht die Outputtabelle anders aus:
+
 ![Screenshot Spyder IDE Output (Tabelle)](spyder.png)
+
+<br>
 
 #### Dokumentation bzw. Hilfefunktion
 
