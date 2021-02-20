@@ -15,10 +15,9 @@ from mr import mr
 data = pd.read_csv("C:\\YourFolder\\YourFile.csv") # e.g. example file 'mehrfachantworten.csv'
 
 data
-
-mr(data, "nike", "head", "boss", "lacoste")
-
 ```
+
+![Screenshot Testdaten 'mehrfachantworten.csv')](data.png)
 
 #### Ausgabe in Jupyter Notebook
 
