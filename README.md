@@ -20,24 +20,13 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 ```
 
+##### Ausgabe in Jupyter Notebook
 
-
-
+![Screenshot Jupyter Notebook Output (Tabelle und Grafik](jupyter.png)
 
 ##### Ausgabe in Spyder IDE
 
-```python
-mr(data, "head", "nike", "boss", "lacoste", jup=False)
-Out[33]: 
-         Anz Nennungen  % Befragte  % mögl Nennungen  % tatsächl Nennungen
-boss                 2       22.22              5.56                 13.33
-nike                 4       44.44             11.11                 26.67
-lacoste              4       44.44             11.11                 26.67
-head                 5       55.56             13.89                 33.33
-```
-
-
-
+![Screenshot Spyder IDE Output (Tabelle)](spyder.png)
 
 <br>
 <br>
