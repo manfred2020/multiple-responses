@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Functions:
-    mr - multiple response
+    mr - multiple responses
     cv - count values (upcoming)
     
 Author:
@@ -17,7 +17,7 @@ def mr(df, *col, count = 1, save = False, jup=True):
     
     """
     NAME:
-        mr - multiple response
+        mr - multiple responses
     
     DESCRIPTION:
         Eine kleine Funktion zur Auswertung von Mehrfachantworten, welche
