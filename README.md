@@ -12,7 +12,7 @@ Analysis of multiple responses - Auswertung von Mehrfachantworten
 import pandas as pd
 from mr import mr
 
-data = pd.read_csv("C:\\YourFolder\\YourFile.csv")
+data = pd.read_csv("C:\\YourFolder\\YourFile.csv") # e.g. example file *mehrfachantworten.csv*
 
 data
 
