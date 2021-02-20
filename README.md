@@ -23,7 +23,7 @@ data
 
 Ein Standardaufruf (vgl. Beispieldatensatz *mehrfachantworten.csv*) der Funktion **mr()** mit
 ```python
-mr(daten, "nike", "head", "boss", "lacoste")
+mr(data, "nike", "head", "boss", "lacoste")
 ```
 ergibt in Jupyter Notebooks folgenden Output:
 
