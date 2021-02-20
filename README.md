@@ -28,6 +28,75 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 ![Screenshot Spyder IDE Output (Tabelle)](spyder.png)
 
+
+
+```python
+print(mr.__doc__)
+
+    NAME:
+        mr - multiple response
+    
+    DESCRIPTION:
+        Eine kleine Funktion zur Auswertung von Mehrfachantworten, welche
+        ein Balkendiagramm ausgibt sowie eine Tabelle (Dataframe) mit den 
+        Ergebnissen der Auswertung
+        
+    Parameters:
+        df : Dataframe
+        col : string
+              Variablen, die in die Auswertung einbezogen werden sollen
+        count : int, float
+                Wert, der gezählt/ausgewertet werden soll
+        save : bool
+               True: Outputtabelle wird in Zwischenablage kopiert
+               False: Outputtabelle wird nicht in Zwischenablage kopiert
+               (default)
+        jup : bool
+              True: Funktion wird in Juypter Notebook aufgerufen,
+                    "gestylte" Outputtabelle (Dataframe) wird angezeigt (default)
+              False: Funktion wird nicht in Jupyter Notebook aufgerufen, sondern
+                     bspw. in Sypder.
+                     "normale" Outputtabelle (Dataframe) wird angezeigt.
+    
+    Returns:
+        Dataframe
+        ```
+
+```python
+help(mr)
+Help on function mr in module __main__:
+
+mr(df, *col, count=1, save=False, jup=True)
+    NAME:
+        mr - multiple response
+    
+    DESCRIPTION:
+        Eine kleine Funktion zur Auswertung von Mehrfachantworten, welche
+        ein Balkendiagramm ausgibt sowie eine Tabelle (Dataframe) mit den 
+        Ergebnissen der Auswertung
+        
+    Parameters:
+        df : Dataframe
+        col : string
+              Variablen, die in die Auswertung einbezogen werden sollen
+        count : int, float
+                Wert, der gezählt/ausgewertet werden soll
+        save : bool
+               True: Outputtabelle wird in Zwischenablage kopiert
+               False: Outputtabelle wird nicht in Zwischenablage kopiert
+               (default)
+        jup : bool
+              True: Funktion wird in Juypter Notebook aufgerufen,
+                    "gestylte" Outputtabelle (Dataframe) wird angezeigt (default)
+              False: Funktion wird nicht in Jupyter Notebook aufgerufen, sondern
+                     bspw. in Sypder.
+                     "normale" Outputtabelle (Dataframe) wird angezeigt.
+    
+    Returns:
+        Dataframe
+        ```
+        
+        
 <br>
 <br>
 
