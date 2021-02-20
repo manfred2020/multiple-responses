@@ -60,7 +60,8 @@ print(mr.__doc__)
     
     Returns:
         Dataframe
-        ```
+```
+
 
 ```python
 help(mr)
@@ -94,7 +95,7 @@ mr(df, *col, count=1, save=False, jup=True)
     
     Returns:
         Dataframe
-        ```
+```
         
         
 <br>
