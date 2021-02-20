@@ -91,3 +91,4 @@ def mr(df, *col, count = 1, save = False, jup=True):
         return display(style)
     else:
         return finalset
+    
