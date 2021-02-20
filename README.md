@@ -32,7 +32,8 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 Durch die Eingabe von ```print(mr.__doc__)``` wird die Dokumentation der Funktion aufgerufen:
 
-``` NAME:
+```
+    NAME:
         mr - multiple response
     
     DESCRIPTION:
