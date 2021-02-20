@@ -62,7 +62,7 @@ Durch die Eingabe von ```print(mr.__doc__)``` wird die Dokumentation der Funktio
         Dataframe
 ```
 
-Auch durch die Eingabe von ```help(mr)``` wird die Dokumentation angezeigt:
+Auch durch die Eingabe von ```help(mr)``` wird die Dokumentation angezeigt - dabei auch inkl. der Parameter des Funktionsaufrufes:
 
 ```
 Help on function mr in module __main__:
