@@ -20,7 +20,7 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 ```
 
-##### Ausgabe in Jupyter Notebook
+#### Ausgabe in Jupyter Notebook
 
 Ein Standardaufruf der Funktion **mr()** mit (vgl. Beispieldatensatz *mehrfachantworten*)
 ```python
@@ -30,11 +30,11 @@ ergibt in Jupyter Notebooks folgenden Output:
 
 ![Screenshot Jupyter Notebook Output (Tabelle und Grafik](jupyter.png)
 
-##### Ausgabe in Spyder IDE
+#### Ausgabe in Spyder IDE
 
 ![Screenshot Spyder IDE Output (Tabelle)](spyder.png)
 
-##### Dokumentation bzw. Hilfefunktion
+#### Dokumentation bzw. Hilfefunktion
 
 Durch die Eingabe von ```print(mr.__doc__)``` wird die Dokumentation der Funktion aufgerufen:
 
