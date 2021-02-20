@@ -32,10 +32,7 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 Durch die Eingabe von ```print(mr.__doc__)``` wird die Dokumentation der Funktion aufgerufen:
 
-```python
-print(mr.__doc__)
-
-    NAME:
+``` NAME:
         mr - multiple response
     
     DESCRIPTION:
@@ -66,8 +63,7 @@ print(mr.__doc__)
 
 Auch durch die Eingabe von ```help(mr)``` wird die Dokumentation angezeigt:
 
-```python
-help(mr)
+```
 Help on function mr in module __main__:
 
 mr(df, *col, count=1, save=False, jup=True)
