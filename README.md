@@ -9,12 +9,12 @@ Analysis of multiple responses - Auswertung von Mehrfachantworten
 
 
 ```python
-import pandas as pd
-from mr import mr
+import pandas as pd # Import von Pandas, um anschließende das Datenfile zu importieren
+from mr import mr # Import der Funktion mr aus dem Modul (File) mr
 
 data = pd.read_csv("C:\\YourFolder\\YourFile") # e.g. example file 'mehrfachantworten.csv'
 
-data
+data # Anzeige des importierten Dataframes
 ```
 
 ![Screenshot Testdaten 'mehrfachantworten.csv')](data.png)
