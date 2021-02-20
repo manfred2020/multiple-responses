@@ -22,6 +22,12 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 ##### Ausgabe in Jupyter Notebook
 
+Ein Standardaufruf der Funktion **mr()** mit (vgl. Beispieldatensatz *mehrfachantworten*)
+```python
+mr(daten, "nike", "head", "boss", "lacoste")
+```
+ergibt in Jupyter Notebooks folgenden Output:
+
 ![Screenshot Jupyter Notebook Output (Tabelle und Grafik](jupyter.png)
 
 ##### Ausgabe in Spyder IDE
