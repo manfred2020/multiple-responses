@@ -30,7 +30,7 @@ mr(data, "nike", "head", "boss", "lacoste")
 
 ##### Dokumentation bzw. Hilfefunktion
 
-Durch die Eingabe von ```python print(mr.__doc__)``` wird die Dokumentation der Funktion aufgerufen:
+Durch die Eingabe von ```print(mr.__doc__)``` wird die Dokumentation der Funktion aufgerufen:
 
 ```python
 print(mr.__doc__)
@@ -64,7 +64,7 @@ print(mr.__doc__)
         Dataframe
 ```
 
-Auch durch die Eingabe von ```python help(mr)``` wird die Dokumentation angezeigt:
+Auch durch die Eingabe von ```help(mr)``` wird die Dokumentation angezeigt:
 
 ```python
 help(mr)
