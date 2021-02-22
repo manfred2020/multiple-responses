@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Functions:
-    mr - multiple responses
-    cv - count values (upcoming)
+    mr - multiple response
+    cv - count values
     
 Author:
     Manfred Hammerl
@@ -11,13 +11,13 @@ https://github.com/manfred2020
 
 """
 
-__version__ = "0.1.1, from 20th February 2021"
+__version__ = "0.2.0, from 22nd February 2021"
 
-def mr(df, *col, count = 1, save = False, jup=True):
+def mr(df, *col, count = 1, save = False, decimal = ",", style = True):
     
     """
     NAME:
-        mr - multiple responses
+        mr - multiple response
     
     DESCRIPTION:
         Eine kleine Funktion zur Auswertung von Mehrfachantworten, welche
@@ -34,7 +34,10 @@ def mr(df, *col, count = 1, save = False, jup=True):
                True: Outputtabelle wird in Zwischenablage kopiert
                False: Outputtabelle wird nicht in Zwischenablage kopiert
                (default)
-        jup : bool
+        decimal : string
+                  Dezimaltrennzeichen, bspw. "," (default) im deutschsprachigen Raum,
+                  oder "." im englischsprachigen Raum
+        style : bool
               True: Funktion wird in Juypter Notebook aufgerufen,
                     "gestylte" Outputtabelle (Dataframe) wird angezeigt (default)
               False: Funktion wird nicht in Jupyter Notebook aufgerufen, sondern
@@ -51,7 +54,7 @@ def mr(df, *col, count = 1, save = False, jup=True):
     columns = [] # leere Liste erstellen
     
     for col in col:
-        columns.append(col) # alle eingegebenen Variablen in Liste einfügen
+        columns.append(col) # Alle eingegebenen Variablen in Liste einfügen
     
     mrcount = (df[columns] == count).sum(axis = 0).sort_values(ascending = True)
     # die erste Basisauswertung; sie bestimmt auch die Anzeigereihenfolge
@@ -62,19 +65,19 @@ def mr(df, *col, count = 1, save = False, jup=True):
     cells = (length*width) # Anzahl der Zellen im Dataframe ermitteln
         
     finalset = pd.DataFrame({"Anz Nennungen" : mrcount,
-                          "% Befragte" : ((mrcount/length)*100).round(2),
-                          "% mögl Nennungen" : ((mrcount/cells)*100).round(2),
-                          "% tatsächl Nennungen" : ((mrcount/(mrsum))*100).round(2)}
+                             "% Befragte" : ((mrcount/length)*100).round(2),
+                             "% mögl Nennungen" : ((mrcount/cells)*100).round(2),
+                             "% tatsächl Nennungen" : ((mrcount/(mrsum))*100).round(2)}
                             ).fillna(0)
     # fillna() wegen möglicher Division durch 0
         
-    style = finalset.style.format({"Anz Nennungen" : "{:.0f}",
-                              '% Befragte' : '{:.1f}%',
-                              "% mögl Nennungen" : "{:.1f}%",
-                              "% tatsächl Nennungen" : "{:.1f}%"})
+    styleset = finalset.style.format({"Anz Nennungen" : "{:.0f}",
+                                      '% Befragte' : '{:.1f}%',
+                                      "% mögl Nennungen" : "{:.1f}%",
+                                      "% tatsächl Nennungen" : "{:.1f}%"})
     
     if save:
-        finalset.to_clipboard(decimal = ",")
+        finalset.to_clipboard(decimal = decimal)
         # ',' als Dezimaltrennzeichen im deutschsprachigen Raum
         print("\nErgebnistabelle wurde in die Zwischenablage zur weiteren Verwendung kopiert\n")
         
@@ -86,9 +89,29 @@ def mr(df, *col, count = 1, save = False, jup=True):
         ax.xaxis.set_major_formatter(FormatStrFormatter('%.f%%'))
         plt.legend(loc='lower right')
     
-    if jup == True:
+    if style == True:
         from IPython.display import display
-        return display(style)
+        return display(styleset)
     else:
         return finalset
+
+
+def cv(df, *col, count = 1, var = "Counted_Values"):
     
+    columns = [] # Leere Liste erstellen
+    
+    for col in col:
+        columns.append(col) # Alle eingegebenen Variablen in Liste einfügen
+    
+    df[var] = (df[columns] == count).sum(axis = 1)
+    
+    if var in df.columns:
+        print("\nWerte wurden gezählt und in neuer Variable gespeichert")
+        print("\nMinimum: {}, Maximum: {}, Durchschnitt: {}\n".format(df[var].min(),
+                                                                df[var].max(),
+                                                                round(df[var].mean(), 2)
+                                                                ))
+    
+    return df[var]
+
+   
