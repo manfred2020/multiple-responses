@@ -8,7 +8,7 @@
 
 Analysis of multiple responses - Auswertung von Mehrfachantworten
 
-/ [Anwendungsbeispiel](#Anwendungsbeispiel) / [Dokumentation](#Dokumentation-bzw.-Hilfefunktion) /
+/ [Anwendungsbeispiel](#Anwendungsbeispiel) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
 
 <br>
 
@@ -46,7 +46,7 @@ Die Ausgabe der Grafik unterscheidet sich zwischen Jupyter Notebooks und der Aus
 
 <br>
 
-### Dokumentation bzw. Hilfefunktion
+### Dokumentation bzw Hilfefunktion
 
 Durch die Eingabe von ```print(mr.__doc__)``` wird die Dokumentation der Funktion aufgerufen:
 
