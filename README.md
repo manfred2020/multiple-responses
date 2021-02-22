@@ -5,8 +5,14 @@
 [![Generic badge](https://img.shields.io/badge/©-2021-black.svg)](https://github.com/manfred2020/multiple-responses)
 
 # mr - multiple responses
+
 Analysis of multiple responses - Auswertung von Mehrfachantworten
 
+/ [Anwendungsbeispiel](#Anwendungsbeispiel) / [Dokumentation](#Dokumentation-bzw.-Hilfefunktion) /
+
+<br>
+
+### Anwendungsbeispiel
 
 ```python
 import pandas as pd # Import von Pandas, um anschließend das Datenfile zu importieren
@@ -36,9 +42,11 @@ Die Ausgabe der Grafik unterscheidet sich zwischen Jupyter Notebooks und der Aus
 
 ![Screenshot Spyder IDE Output (Tabelle)](spyder.png)
 
+/ [zum Anfang](#readme) /
+
 <br>
 
-#### Dokumentation bzw. Hilfefunktion
+### Dokumentation bzw. Hilfefunktion
 
 Durch die Eingabe von ```print(mr.__doc__)``` wird die Dokumentation der Funktion aufgerufen:
 
@@ -106,8 +114,9 @@ mr(df, *col, count=1, save=False, jup=True)
     Returns:
         Dataframe
 ```
-        
-        
+
+/ [zum Anfang](#readme) /
+
 <br>
 <br>
 
