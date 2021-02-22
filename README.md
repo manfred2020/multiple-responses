@@ -22,7 +22,7 @@ data # Anzeige des importierten Dataframes
 
 Ein Standardaufruf (vgl. Beispieldatensatz *mehrfachantworten.csv*) der Funktion **mr()** mit
 ```python
-from mr import mr # Import der Funktion mr aus dem Modul (File) mr
+from mr import mr # Import der Funktion 'mr' aus dem Modul (File) 'mr'
 
 mr(data, "nike", "head", "boss", "lacoste")
 ```
