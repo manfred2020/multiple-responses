@@ -8,7 +8,7 @@
 
 Analysis of multiple responses - Auswertung von Mehrfachantworten
 
-/ [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion-mr) / [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion-cv) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
+/ [Anwendungsbeispiel Funktion mr](#Anwendungsbeispiel-Funktion-mr) / [Anwendungsbeispiel Funktion cv](#Anwendungsbeispiel-Funktion-cv) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
 
 <br>
 
@@ -65,6 +65,8 @@ data
 ```
 
 ![Screenshot Jupyter Notebook Tabelle Funktion cv](data2.png)
+
+/ [zum Anfang](#readme) /
 
 <br>
 
