@@ -8,7 +8,7 @@
 
 Analysis of multiple responses - Auswertung von Mehrfachantworten
 
-/ [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion -mr()) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
+/ [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion-mr()) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
 
 <br>
 
