@@ -46,7 +46,7 @@ Die Ausgabe der Grafik unterscheidet sich zwischen Jupyter Notebooks und der Aus
 
 <br>
 
-### Anwendungsbeispiel Funktion mr()
+### Anwendungsbeispiel Funktion cv()
 
 #### Ausgabe in Jupyter Notebook
 
@@ -59,6 +59,10 @@ cv(data, "nike", "head", "boss", "lacoste")
 ergibt in Jupyter Notebooks folgenden Output:
 
 ![Screenshot Jupyter Notebook Output Funktion cv](jupyter2.png)
+
+```python
+data
+```
 
 ![Screenshot Jupyter Notebook Tabelle Funktion cv](data2.png)
 
