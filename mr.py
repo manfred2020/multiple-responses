@@ -35,18 +35,19 @@ def mr(df, *col, count = 1, save = False, decimal = ",", style = True):
                False: Outputtabelle wird nicht in Zwischenablage kopiert
                (default)
         decimal : string
+                  Nur in Verbindung mit 'save = True' relevant!
                   Dezimaltrennzeichen, bspw. "," (default) im deutschsprachigen Raum,
                   oder "." im englischsprachigen Raum
         style : bool
-              True: Funktion wird in Juypter Notebook aufgerufen,
-                    "gestylte" Outputtabelle (Dataframe) wird angezeigt (default)
-              False: Funktion wird nicht in Jupyter Notebook aufgerufen, sondern
-                     bspw. in Sypder.
-                     "normale" Outputtabelle (Dataframe) wird angezeigt.
+              True: Wird die Funktion in einem Juypter Notebook aufgerufen, so
+                    kann die "gestylte" Outputtabelle (Dataframe) angezeigt werden (default)
+              False: Wird die Funktion nicht in einem Jupyter Notebook aufgerufen,
+                     sondern bspw. in Sypder, so wird damit eine "normale" Outputtabelle
+                     (Dataframe) angezeigt.
     
     Returns:
         Dataframe
-        
+    
     """
     
     import pandas as pd
@@ -97,6 +98,28 @@ def mr(df, *col, count = 1, save = False, decimal = ",", style = True):
 
 
 def cv(df, *col, count = 1, var = "Counted_Values"):
+    
+    """
+    NAME:
+        cv - count values
+    
+    DESCRIPTION:
+        Eine kleine Funktion zur Zählung von Werten in einer oder mehreren Variablen
+        und Speicherung des Zähl-Ergebnisses in einer neuen Variable
+        
+    Parameters:
+        df : Dataframe
+        col : string
+              Variablen, die in die Zählung einbezogen werden sollen
+        count : int, float
+                Wert, der gezählt werden soll
+        var : Name der neu zu erstellenden Variable, in welcher das Zähl-Ergebnis
+              gespeichert werden soll
+    
+    Returns:
+        Anzeige der neue erstellten Variable
+        
+    """
     
     columns = [] # Leere Liste erstellen
     
