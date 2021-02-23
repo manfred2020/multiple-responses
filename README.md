@@ -8,11 +8,11 @@
 
 Analysis of multiple responses - Auswertung von Mehrfachantworten
 
-/ [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion-mr()) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
+/ [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion-mr) / [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion-cv) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
 
 <br>
 
-### Anwendungsbeispiel Funktion mr()
+### Anwendungsbeispiel Funktion mr
 
 ```python
 import pandas as pd # Import von Pandas, um anschließend das Datenfile zu importieren
@@ -46,7 +46,7 @@ Die Ausgabe der Grafik unterscheidet sich zwischen Jupyter Notebooks und der Aus
 
 <br>
 
-### Anwendungsbeispiel Funktion cv()
+### Anwendungsbeispiel Funktion cv
 
 #### Ausgabe in Jupyter Notebook
 
