@@ -8,11 +8,11 @@
 
 Analysis of multiple responses - Auswertung von Mehrfachantworten
 
-/ [Anwendungsbeispiel](#Anwendungsbeispiel) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
+/ [Anwendungsbeispiel](#Anwendungsbeispiel-Funktion -mr()) / [Dokumentation](#Dokumentation-bzw-Hilfefunktion) /
 
 <br>
 
-### Anwendungsbeispiel
+### Anwendungsbeispiel Funktion mr()
 
 ```python
 import pandas as pd # Import von Pandas, um anschließend das Datenfile zu importieren
@@ -46,11 +46,30 @@ Die Ausgabe der Grafik unterscheidet sich zwischen Jupyter Notebooks und der Aus
 
 <br>
 
+### Anwendungsbeispiel Funktion mr()
+
+#### Ausgabe in Jupyter Notebook
+
+Ein Standardaufruf (vgl. Beispieldatensatz *mehrfachantworten.csv*) der Funktion **cv()** mit
+```python
+from mr import cv # Import der Funktion 'cv' aus dem Modul (File) 'mr'
+
+cv(data, "nike", "head", "boss", "lacoste")
+```
+ergibt in Jupyter Notebooks folgenden Output:
+
+![Screenshot Jupyter Notebook Output Funktion cv](jupyter2.png)
+
+![Screenshot Jupyter Notebook Tabelle Funktion cv](data2.png)
+
+<br>
+
 ### Dokumentation bzw Hilfefunktion
 
 Importiert man das komplette Modul **mr** und ruft dananch die Hilfefunktion **help()** auf
 ```python
 import mr
+
 help(mr)
 ```
 so wird die vollständige Dokumentation des Moduls bzw. der darin enthaltenen Funktionen **mr()** und **cv()** angezeigt.
