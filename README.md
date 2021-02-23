@@ -154,7 +154,7 @@ VERSION
     0.2.0, from 22nd February 2021
 ```
 
-Importiert man nicht das komplette Modul, sondern eine einzelne Funktion (oder mit ***** alle Funktionen aus dem Modul), so kann man sich die Dokumentation für die einzelne Funktion anzeigen lassen.
+Importiert man nicht das komplette Modul, sondern eine einzelne Funktion (oder mit * alle Funktionen aus dem Modul), so kann man sich die Dokumentation für die einzelne Funktion anzeigen lassen.
 
 ```python
 from mr import mr
