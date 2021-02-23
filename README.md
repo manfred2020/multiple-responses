@@ -129,12 +129,24 @@ VERSION
     0.2.0, from 22nd February 2021
 ```
 
-Auch durch die Eingabe von ```help(mr)``` wird die Dokumentation angezeigt - dabei auch inkl. der Parameter des Funktionsaufrufes:
+Importiert man nicht das komplette Modul, sondern eine einzelne Funktion (oder mit ***** alle Funktionen aus dem Modul), so kann man sich die Dokumentation für die einzelne Funktion anzeigen lassen.
+
+```python
+from mr import mr
+# bzw.:
+from mr import cv
+# bzw.:
+from mr import *
+
+help(mr)
+# bzw.:
+help(cv)
+```
 
 ```
-Help on function mr in module __main__:
+Help on function mr in module mr:
 
-mr(df, *col, count=1, save=False, jup=True)
+mr(df, *col, count=1, save=False, decimal=',', style=True)
     NAME:
         mr - multiple response
     
@@ -153,16 +165,45 @@ mr(df, *col, count=1, save=False, jup=True)
                True: Outputtabelle wird in Zwischenablage kopiert
                False: Outputtabelle wird nicht in Zwischenablage kopiert
                (default)
-        jup : bool
-              True: Funktion wird in Juypter Notebook aufgerufen,
-                    "gestylte" Outputtabelle (Dataframe) wird angezeigt (default)
-              False: Funktion wird nicht in Jupyter Notebook aufgerufen, sondern
-                     bspw. in Sypder.
-                     "normale" Outputtabelle (Dataframe) wird angezeigt.
+        decimal : string
+                  Nur in Verbindung mit 'save = True' relevant!
+                  Dezimaltrennzeichen, bspw. "," (default) im deutschsprachigen Raum,
+                  oder "." im englischsprachigen Raum
+        style : bool
+              True: Wird die Funktion in einem Juypter Notebook aufgerufen, so
+                    kann die "gestylte" Outputtabelle (Dataframe) angezeigt werden (default)
+              False: Wird die Funktion nicht in einem Jupyter Notebook aufgerufen,
+                     sondern bspw. in Sypder, so wird damit eine "normale" Outputtabelle
+                     (Dataframe) angezeigt.
     
     Returns:
         Dataframe
 ```
+```
+Help on function cv in module mr:
+
+cv(df, *col, count=1, var='Counted_Values')
+    NAME:
+        cv - count values
+    
+    DESCRIPTION:
+        Eine kleine Funktion zur Zählung von Werten in einer oder mehreren Variablen
+        und Speicherung des Zähl-Ergebnisses in einer neuen Variable
+        
+    Parameters:
+        df : Dataframe
+        col : string
+              Variablen, die in die Zählung einbezogen werden sollen
+        count : int, float
+                Wert, der gezählt werden soll
+        var : Name der neu zu erstellenden Variable, in welcher das Zähl-Ergebnis
+              gespeichert werden soll
+    
+    Returns:
+        Anzeige der neue erstellten Variable
+```        
+
+Die Dokumentation der Funktionen kann man sich auch mit ```mr.__doc__``` bzw. ```cv.__doc__``` ausgeben lassen.
 
 / [zum Anfang](#readme) /
 
